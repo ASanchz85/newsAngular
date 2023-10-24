@@ -1,5 +1,5 @@
 # NewsAPP through newsapi.org
-* A simple website consuming an API of news with Angular *
+*A simple website consuming an API of news with Angular*
 
 # NoticiasRestApp
 

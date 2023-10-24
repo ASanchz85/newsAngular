@@ -1,0 +1,21 @@
+.heading {
+  font-family: 'Newsreader', serif;
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #bbb;
+}
+
+.jumbotron {
+  background-color: #343a40;
+  padding: 1.5rem;
+  border-radius: .3rem;
+  border: thin solid #78c2ad;
+}
+
+.form-select {
+  background-color: #343a40;
+  border: 1px solid #78c2ad;
+
+}

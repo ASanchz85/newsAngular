@@ -1,0 +1,22 @@
+<section class="jumbotron mt-5">
+  <h2 class="heading">Set topic and country</h2>
+  <div class="row">
+    <form (ngSubmit)="getNews()">
+      <div class="form-group">
+        <label for="topic" class="form-label mt-4"
+          >Topic</label
+        >
+        <select class="form-select form-select-lg" name="topic" id="exampleSelect1" [(ngModel)]="topic" >
+          <option *ngFor="let topic of topics" [value]="topic" >{{topic.toUpperCase()}}</option>
+        </select>
+        <label for="category" class="form-label mt-4"
+          >Country</label
+        >
+        <select class="form-select form-select-lg" name="category" id="exampleSelect1" [(ngModel)]="country">
+          <option *ngFor="let country of countries" [value]="country.isocodes" >{{country.country}}</option>
+        </select>
+      </div>
+      <button class="btn btn-primary mt-4" type="submit">Submit</button>
+    </form>
+  </div>
+</section>

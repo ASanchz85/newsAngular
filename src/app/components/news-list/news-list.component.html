@@ -1,0 +1,14 @@
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mt-2">
+  <div class="col" *ngFor="let item of listofNews">
+    <div class="card bg-dark">
+      <img [src]="item.urlToImage ? item.urlToImage : 'https://th.bing.com/th/id/R.1a7a998b053b9397ff911624c3c14d37?rik=HEk9XX2JKSSY0g&riu=http%3a%2f%2fwww.freeiconspng.com%2fuploads%2fno-image-icon-13.png&ehk=NodUDnGzZFZc3Tjel%2bPcCpb3DcWOtbmzZQkL0IV73tE%3d&risl=&pid=ImgRaw&r=0'" class="card-img-top" [alt]="item.title" />
+      <div class="card-body text-white bg-primary">
+        <h5 class="card-title">{{item.title}}</h5>
+        <p class="card-text">
+          {{item.content}}
+        </p>
+      </div>
+    </div>
+    <a [href]="item.url" class="btn btn-dark btn-block" target="_blank" noreferrer>open it</a>
+  </div>
+</div>

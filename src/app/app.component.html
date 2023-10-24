@@ -1,0 +1,6 @@
+<app-navbar [title]="'News APP'" (queryParams)="queryByWord($event)"></app-navbar>
+<div class="container">
+  <app-form (selectedParams)="searchNews($event)"></app-form>
+  <app-news-list [listofNews]="newsList" ></app-news-list>
+  <app-loader *ngIf="loader"></app-loader>
+</div>
